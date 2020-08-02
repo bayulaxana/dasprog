@@ -1,0 +1,103 @@
+---
+title: Konstanta dan Literal
+---
+
+Istilah konstanta merujuk pada suatu nilai tetap, tidak dapat berubah/diubah bahkan oleh program itu sendiri. Literal adalah konstanta yang nilainya kita tulis secara eksplisit pada kode. Contohnya :
+
+```c
+5       // Literal bilangan bulat  
+1.23    // Literal bilangan real  
+'S'     // Literal karakter  
+"Hai"   // Literal string  
+```
+
+Berikut adalah jenis-jenis literal dalam bahasa C.
+
+| Literal                   | Contoh                        | Tipe Default  |
+|---------------------------|:------------------------------|:--------------|
+| Bilangan bulat            | `10, 0, -1 dll.`              | `int`           |
+| Bilangan real (floating)  | `202.15, 33.24, -12.45 dll.`  | `double`        |
+| Karakter                  | `‘A’, ‘1’, ‘#’`               | `char`          |
+| String                    | `“Hai”`                       | `const char[4]` |
+
+### Bilangan Bulat
+
+Terdapat tiga cara untuk menuliskan literal bilangan bulat. Yakni menggunakan basis 10 (desimal), basis 8 (oktal) dan basis 16 (heksadesimal).
++ **Desimal** - ditulis seperti bilangan pada umumnya. Contohnya `100, -22`.
++ **Oktal** - diawali dengan angka “0”, kemudian diikuti bilangan oktal. Contohnya `077, 033`.
++ **Heksadesimal** - diawali dengan “0x”, kemudian diikuti bilangan heksadesimal. Contohnya `0x7f, 0x521`.
+
+### Bilangan Real (floating)
+
+Bilangan real (floating) dituliskan dengan menggunakan pemisah tanda titik (.) antara bilangan bulat dan bilangan pecahannya. Contohnya `2.321, -11.22, 0.00012`.
+
+### Karakter
+
+Literal karakter dituliskan dengan mengapitnya menggunakan tanda petik. Misalnya karakter A ditulis `‘A’`. Selain karakter normal, terdapat karakter khusus dalam bahasa C yang mempunyai fungsi-fungsi khusus atau karakter yang tidak bisa begitu saja dituliskan dengan bentuk aslinya. Misalnya, **“new line”** direpresentasikan dengan `‘\n’`, simbol backslash direpresentasikan dengan `‘\’`. Karakter-karakter tersebut disebut dengan escape sequence. Berikut adalah escape sequence yang terdapat dalam bahasa C.
+
+| Escape Sequence | Karakter            |
+|-----------------|:--------------------|
+| `\b`            | Backspace           |
+| `\f`            | Form feed           |
+| `\n`            | Newline             |
+| `\r`            | Return              |
+| `\t`            | Tab horisontal      |
+| `\v`            | Tab vertikal        |
+| `\\`            | Backslash           |
+| `\’`            | Tanda petik         |
+| `\”`            | Tanda petik dua     |
+| `\?`            | Tanda tanya         |
+| `\0`            | Karakter null       |
+| `\b`            | Backspace           |
+
+
+### String
+
+String adalah kumpulan dari satu karakter atau lebih. Literal string diapit oleh tanda kutip. Misalnya, `“Hello, world.”`. Representasi string dalam bahasa C menggunakan array bertipe `char`. Kita akan mempelajarinya di bagian selanjutnya.
+
+## Mendefinisikan Konstanta
+
+Untuk mendefinisikan konstanta, dapat dilakukan dengan cara-cara seperti berikut.
+
+### Mendefinisikan Variabel Konstan
+
+Variabel juga dapat dibuat konstan nilainya agar tidak dapat berubah/diubah selama program berjalan. Variabel konstan dibuat dengan menambahkan keyword `const` saat pendefinisian variabel.
+ 
+```c
+const tipe_data nama_var = <nilai yang bersesuaian>;
+```
+
+Perlu diperhatikan bahwa definisi variabel konstan harus disertai inisialisasinya.
+Contoh :
+
+```c
+const int    KONST_INT = 23;  
+const double KONST_DOUBLE = 23.12;
+```
+
+Segala bentuk perubahan yang dilakukan terhadap variabel konstan akan menghasilkan error.
+
+```c
+const int KONST_INT = 23;  
+KONST_INT = 11; // Error
+```
+
+### Menggunakan #define
+
+Cara lainnya adalah menggunakan prepocessor directive `#define`. Sintaksnya adalah sebagai berikut.
+ 
+```
+#define nama <nilai yang bersesuaian>
+```
+
+Contoh
+```c
+#define KONST_INT    23  
+#define KONST_DOUBLE 23.11  
+  
+int main()  
+{  
+    int    a = KONST_INT;  
+    double b = KONST_DOUBLE;  
+}  
+```

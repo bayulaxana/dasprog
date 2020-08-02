@@ -1,0 +1,49 @@
+Memulai (link sidebar)
+    --> IDE <--
+
+Pengenalan Bahasa C
+    Contoh Program
+    Struktur Program
+
+Dasar Bahasa C
+    Statement
+    Komentar
+    Keyword dan Identifier
+    Variabel
+    Konstanta dan Literal
+    Tipe Data Dasar
+    Operator
+
+### ----- ### to be continued
+Input dan Output Dasar
+
+Flow Control
+    Percabangan
+    Perulangan
+    Break dan Continue
+
+Array dan String
+    Array
+    String
+
+Fungsi dan Rekursi
+    Pengenalan Fungsi
+    Pendefinisian Fungsi
+    Variabel Scope 
+    Fungsi Rekursif
+
+Pointer
+    Alamat Memori
+    Pengenalan Pointer
+        Dynamic Memory Allocation
+    Pointer, Array dan Fungsi
+
+Struct
+    Pengenalan Struct
+        Pengenalan
+        Deklarasi
+        Variabel Struct
+        Akses Member
+    Struct dan Pointer
+        Dynamic Memory Allocation
+        Akses Member

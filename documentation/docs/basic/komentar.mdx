@@ -1,0 +1,33 @@
+---
+title: Komentar
+---
+
+Komentar (_comment_) adalah bagian dari program yang tidak akan dieksekusi. Komentar sangat berguna untuk mendeskripsikan program yang dibuat, misalnya saja untuk menjelaskan bagian dari kode agar mudah dipahami oleh programmer lainnya. Terdapat dua jenis komentar dalam bahasa C.
+
+### Komentar Single-Line
+
+Seperti namanya, komentar single-line hanya bekerja pada satu baris. Komentar single-line diawali dengan simbol `//` . Semua karakter (pada satu baris) dibelakang simbol `//` akan diabaikan.
+
+```c
+// Ini adalah komentar single-line  
+  
+// Fungsi untuk mencetak ke layar  
+printf("HALO\n");  
+
+```
+
+### Komentar Multi-Line
+
+Sedangkan komentar multi-line dapat bekerja pada lebih dari satu baris. Pasangan simbol `/*` dan `*/` digunakan untuk membuat komentar multi-line. Semua karakter yang berada di antara dua simbol tersebut akan diabaikan.
+
+```c
+/* 
+Ini adalah komentar multi-line 
+Semua yang berada di sini akan 
+diabaikan 
+*/  
+```
+
+:::caution Perhatian
+Anda tidak bisa membuat komentar multi-line bersarang di dalam komentar multi-line lainnya.
+:::

@@ -1,0 +1,73 @@
+---
+title: Variabel
+---
+
+## Pengenalan Variabel
+
+**Variabel** adalah suatu tempat yang digunakan untuk menampung data atau nilai pada memori yang mempunyai nilai yang dapat berubah–ubah selama proses program. Pada bahasa C, variabel menyimpan data/nilai dengan tipe data tertentu. Seperti halnya variabel yang menyimpan bilangan bulat (integer).
+
+Variabel dapat dianalogikan sebagai sebuah gelas. Gelas dalam hal ini disebut sebagai **variabel**. Pada umumnya, gelas digunakan untuk menampung cairan. Dalam hal ini cairan adalah **tipe datanya**. Kemudian, contoh dari cairan adalah air, yakni dalam hal ini **data** yang akan disimpan oleh gelas.
+
+Pada dasarnya program bekerja dengan mengolah data-data. Data-data inilah yang kemudian disimpan pada variabel.
+
+## Deklarasi dan Definisi Variabel
+
+Pada bahasa C, variabel harus dideklarasikan terlebih dahulu sebelum bisa digunakan. Seperti halnya gelas tadi, gelas tersebut harus ada terlebih dahulu sebelum bisa digunakan.
+
+Untuk mendeklarasikan sebuah variabel, sintaksnya adalah sebagai berikut.
+
+```
+<tipe_data> <identifier>
+```
+
+Misalkan, potongan kode berikut mendeklarasikan variabel `x` yang bertipe `int`.
+
+```c
+int x
+```
+
+Jika ingin mendeklarasikan lebih dari satu variabel dengan tipe yang sama, bisa menggunakan operator koma (`,`).
+
+```
+<tipe_data> <variabel1>, <variabel2>, ... dst;
+```
+
+```c
+int x, y;
+```
+
+:::info Good Programming Practice
+Selalu gunakan nama variabel yang bermakna, tidak hanya satu atau dua karakter saja. Potongan kode di atas hanyalah contoh untuk memberikan gambaran umum tentang variabel.
+:::
+
+## Pengisian Nilai Pada Variabel
+
+Setelah dideklarasikan, variabel dapat diisi oleh sebuah nilai. Untuk melakukannya,  yakni dengan menggunakan operator assignment (simbol `=`).
+
+```
+identifier_variabel = <nilai yang bersesuaian>
+```
+
+Contoh :
+
+```c
+int x, y;  
+x = 10;  
+y = -2; 
+```
+
+Dalam hal ini, variabel `x` dan `y` akan mempunyai nilai masing-masing `10` dan `-2`.
+
+## Inisialisasi Variabel
+
+Deklarasi dan pengisian nilai pada variabel dapat dilakukan dalam satu instruksi sekaligus. Hal ini disebut dengan **inisialisasi**. Dengan melakukan inisialisasi variabel, berarti kita memberikan nilai awal pada variabel tersebut.
+
+```
+tipe_data identifier_variabel = <nilai yang bersesuaian>;
+```
+
+Contoh :
+
+```c
+int x = 10;
+```

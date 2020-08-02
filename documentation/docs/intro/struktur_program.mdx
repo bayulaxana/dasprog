@@ -1,0 +1,86 @@
+---
+title: Struktur Program
+---
+
+## Struktur Dasar Program Sederhana
+
+Untuk menjelaskan bagaimana program di atas bekerja, mari kita pisahkan satu persatu bagian-bagian dari kode tersebut.
+
+### Header File
+
+```c {1}
+#include <stdio.h>  
+
+int main()
+{  
+      
+    printf("Hello, world!\n");  
+    return 0;  
+}  
+```
+
+Baris 1 pada kode di atas disebut dengan preprocessor directive. Preprocessor yang digunakan dalam hal ini adalah `#include`.
+
+Preprocessor `#include` menjelaskan bahwa program tersebut menyertakan file header `<stdio.h>`. File header  tersebut merupakan library bawaan C yang berisi fungsi-fungsi penting yang dibutuhkan oleh program, misalnya pada kasus ini, program membutuhkan fungsi `printf()` untuk mencetak kalimat **“Hello, world!”**. Tanpa adanya library, program tersebut tidak akan bisa di-compile.
+
+### Fungsi `main()`
+
+Fungsi `main()` pada kode tersebut ditunjukan pada baris ke 3 hingga baris ke 7.
+
+```c {3-8}
+#include <stdio.h>
+
+int main()
+{  
+      
+    printf("Hello, world!\n");  
+    return 0;  
+}
+```
+
+Dalam bahasa C, fungsi `main()` adalah fungsi utama yang harus ada. Hal ini dikarenakan eksekusi kode akan dimulai dari awal fungsi `main()`. 
+
++ Baris 3 menunjukkan nama dari fungsi dan tipe return dari fungsi tersebut. int merupakan tipe return dari fungsi yang bernama `main()`. Kemudian terdapat tanda  `{` yang menandakan awal pembuka dari fungsi `main()`.
++ Baris 5 s.d 7 merupakan tubuh dari fungsi `main()`.
++ Baris 8 terdapat tanda `}` yang menandakan akhir dari fungsi `main()`. Pada dasarnya, tubuh dari sebuah fungsi berada di antara tanda `{ }`.
+
+### Whitespace
+
+```c {2,5}
+#include <stdio.h>  
+
+int main()
+{  
+      
+    printf("Hello, world!\n");  
+    return 0;  
+}  
+```
+
+Dapat diperhatikan pada kode bahwa baris 2 dan 5 kosong (tidak terdapat karakter apapun). Ini disebut dengan **whitespace**. Whitespace adalah area kosong pada kode, dan biasanya dtujukan agar kode mudah dibaca.
+
+Terdapat tiga jenis whitespace, yakni **space**, **tab**, dan **new line**. Baris 2 dan 5 adalah contoh dari new line.
+
+### Statement
+
+```c {6,7}
+#include <stdio.h>  
+
+int main()
+{  
+      
+    printf("Hello, world!\n");  
+    return 0;  
+}  
+```
+
+Singkatnya, statement adalah perintah. Di dalam fungsi `main()`, terdapat dua statement yang ditunjukkan pada baris 6 dan 7. Sebagian besar statement diakhiri oleh tanda titik-koma (`;`).
+
+```c
+printf("Hello, world!\n");  
+return 0;  
+```
+
+Statement pada baris 6 menginstruksikan program untuk memanggil fungsi `printf()`. Fungsi `printf()` adalah fungsi yang tersedia dalam library header `<stdio.h>` dan digunakan untuk mencetak output pada konsol (layar). Dalam hal ini, fungsi `printf()` menerima argumen string bertuliskan **“Hello, world!\n”**. Tanda `‘\n’` dalam string tersebut merupakan karakter spesial yang berfungsi untuk mencetak new line.
+
+Sedangkan statement pada baris 7 disebut dengan return statement. Perintah `return 0` pada fungsi `main()` digunakan untuk mengakhiri program dan menandakan program tersebut sukses dieksekusi.
