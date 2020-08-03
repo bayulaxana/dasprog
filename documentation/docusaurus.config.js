@@ -1,8 +1,8 @@
 module.exports = {
   title: 'Dasar Pemrograman',
   tagline: 'Belajar bersama',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://bayulaxana.github.io',
+  baseUrl: '/dasprog/',
   onBrokenLinks: 'throw',
   favicon: 'img/c-logo.ico',
   organizationName: 'bayulaxana', // Usually your GitHub org/user name.
@@ -30,6 +30,17 @@ module.exports = {
     },
     footer: {
       style: 'dark',
+      links: [
+        {
+          title: 'Assets',
+          items: [
+            {
+              label: 'C Programming Icons by Icons8',
+              href: 'https://icons8.com/icon/40670/c-programming'
+            }
+          ]
+        }
+      ],
       // links: [
       //   {
       //     title: 'Docs',

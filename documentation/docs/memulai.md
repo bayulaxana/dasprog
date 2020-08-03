@@ -2,6 +2,10 @@
 title: Memulai
 ---
 
+:::caution Perhatian
+Modul ini sedang dalam tahap pengerjaan. Harap maklum jika ada perubahan signifikan pada konten dan/atau struktur navigasi.
+:::
+
 **Web** ini merupakan **modul bahasa pemrograman C** yang dirancang dan dibuat sedemikian rupa untuk menunjang pembelajaran Dasar Pemrograman.
 
 ## IDE (_Integrated Development Environment_)
