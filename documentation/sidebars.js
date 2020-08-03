@@ -34,6 +34,19 @@ module.exports = {
       'basic/konstanta_literal',
       'basic/tipe_data_dasar',
       'basic/operator',
-    ])
+    ]),
+    buildCategory('Flow Control', [
+      'flow_control/percabangan',
+      'flow_control/perulangan',
+    ]),
+    buildCategory('Array dan String', [
+      'array_string/array',
+      'array_string/string',
+    ]),
+    buildCategory('Fungsi', [
+      'fungsi/pengenalan_fungsi',
+      'fungsi/variable_scope',
+      'fungsi/fungsi_rekursif',
+    ]),
   ],
 };
